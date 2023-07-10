@@ -27,9 +27,6 @@ function onSelect(event) {
     })
     .then(function updateInfo(markup) {
       catDetails.innerHTML = markup;
-      new SlimSelect({
-        select: breedSelect,
-      });
     })
     .catch(function (error) {
       errorOccurred = true;
